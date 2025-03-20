@@ -19,4 +19,35 @@ public class Transaction {
         this.borrowedDate = borrowedDate;
         this.returnDate = returnDate;
     }
+
+    public static int getIdCounter() {
+        return ID_COUNTER;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public ClubMember getClubMember() {
+        return clubMember;
+    }
+
+    public InventoryItem getInventoryItem() {
+        return inventoryItem;
+    }
+
+    public LocalDate getBorrowedDate() {
+        return borrowedDate;
+    }
+
+    public LocalDate getReturnDate() {
+        return returnDate;
+    }
+
+    public boolean isReturned() {
+        return isReturned;
+    }
+    public void setReturned(boolean returned) {
+        isReturned = returned;
+    }
 }
